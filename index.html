@@ -1,12 +1,78 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Bootstrap Bistrot La Manu</title>
 </head>
-<body>
-    
+
+<body class="bg-light">
+    <header class="text-center mb-2">
+        <div class="display-1"><span class="fw-bold">Bistrot</span> "La Manu"</div>
+    </header>
+    <div class="container shadow bg-white">
+        <div class="row">
+            <div class="col-lg-6 m-auto d-none d-lg-block">
+                <img class="img-fluid" src="img/pouletCurry.jpg" alt="Photo d'un plat de poulet au curry">
+            </div>
+            <div class="col-lg-6 pt-3">
+                <form class="w-75 m-auto" action="" method="get">
+                    <div>
+                        <label for="name" class="form-label">Nom</label>
+                        <input type="text" class="form-control mb-2" id="name" name="name" placeholder="DOE" required>
+                    </div>
+                    <div>
+                        <label for="firstName" class="form-label">Prénom</label>
+                        <input type="text" class="form-control mb-2" id="firstName" name="firstName" placeholder="John" required>
+                    </div>
+                    <div>
+                        <label for="inputEmail" class="form-label">Courriel</label>
+                        <input type="email" class="form-control mb-2" id="inputEmail" name="inputEmail" placeholder="john.doe@courriel.fr" required>
+                    </div>
+                    <div>
+                        <label class="form-label" for="inputSelect01">Choix du plat</label>
+                        <select class="form-select mb-2" id="inputSelect01" name="inputSelect01" required>
+                            <option value="" selected disabled>- - Plats - -</option>
+                            <option value="1">Poulet au Curry (Madras)</option>
+                            <option value="2">Poulet Vindaloo</option>
+                            <option value="3">Tikka Masala</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="form-label" for="inputSelect02">Choix de l'accompagnement</label>
+                        <select class="form-select mb-2" id="inputSelect02" name="inputSelect02" required>
+                            <option value="" selected disabled>- - Accompagnements - -</option>
+                            <option value="1">Riz</option>
+                            <option value="2">Pois chiches</option>
+                            <option value="3">Frites</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="comment" class="form-label">Commentaires (ex. Cuisson, Allergies ... )</label>
+                        <textarea class="form-control" id="comment" name="comment"></textarea>
+                    </div>
+                    <div class="mt-4 mb-2 form-check text-center">
+                        <label class="form-check-label" for="check1"><input type="checkbox" class="form-check-input" id="check1" required> Je promets de ne pas gaspiller : J'ai faim !!!</label>
+                    </div>
+                    <div class="text-center mb-4">
+                        <button type="submit" class="btn btn-white border border-secondary text-secondary px-5">Commander</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center text-white bg-secondary mt-5 pt-5 pb-5">
+        <p>Design for LHP7</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
